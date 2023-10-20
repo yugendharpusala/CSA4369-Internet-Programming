@@ -1,0 +1,22 @@
+.image
+{background-image:url('image6.png');
+  background-size: cover;
+}
+.id
+{
+  color: red;
+}
+.content
+{
+  font-size: xx-large;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+a{
+  color:purple;
+}
+.content {
+  padding:15px;
+  margin: 10px;
+  border-radius: 8px;
+}

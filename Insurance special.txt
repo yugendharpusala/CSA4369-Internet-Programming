@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>RESTAURANT</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+</head>
+<body class="image">
+    <marquee behavior="alternate">
+       <h1 class="id">WELCOME TO life insurance</h1>
+     </marquee> 
+     <marquee>
+    <img src="image1.png" alt="food" width="200px" height="200px">
+    <img src="image2.jpg" alt="food" width="200px" height="200px">
+     </marquee>
+     <div class="content">
+        <center>
+             <a href="Menu.html">Admin</a><br>
+            <a href="Contact Information.html">Agents</a><br>
+           <a href="Reservation System.html">User</a><br>
+           <a href="Special Offers and Events.html">Special Offers and Events</a><br>
+          <a href="Reviews.html">Reviews</a>
+    </center>
+     </div>
+</html>
