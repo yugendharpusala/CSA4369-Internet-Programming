@@ -1,53 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>forms get</title>
-</head>
-<body>
-<?php
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $name = $_POST['fname'];
-    $lastname = $_POST['lname'];
-    
-  
-  $servername = "localhost";
-  $username = "root";
-  $password = "";
-  $database = "students";
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fav icon -->
+    <link rel="icon" href="assets/fav" />
+    <!-- Link Style file -->
+    <link rel="stylesheet" href="style.css" />
+    <title>| Home Page</title>
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <div class="navbar sec-padding" id="top">
+      <div class="logo flex">
+        <img src="D:\xampp\htdocs\practice\p1\images\Beth-and-Rose-Florist-Logo-664x500.png" alt="logo" />
+      </div>
+      <div class="menu">
+        <ul>
+          <li class="menu-item">
+            <a href="#home">home</a>
+          </li>
+          <li class="menu-item">
+            <a href="#products">Products</a>
+          </li>
+          <li class="menu-item">
+            <a href="#blog">Blog</a>
+          </li>
+          <li class="menu-item">
+            <a href="#address">Contact us</a>
+          </li>
+        </ul>
+      </div>
+      <div class="flex">
+        <button class="rounded-btn">
+          <i class="fa-solid fa-user"></i>
+        </button>
+        <button class="rounded-btn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <button class="cart">
+          <div class="cart-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+          Cart
+        </button>
+      </div>
+    </div>
+    <!-- NAVBAR End -->
+    <!-- HERO Start -->
+    <div class="hero sec-padding">
+    <Marquee>
+      <h1 class="heading">FLORISH  FLOWER  SHOP</h1>
+    </marquee>
+      <div class="hero-content flex">
+        <div class="hero-desc">
+          <img src="D:\xampp\htdocs\practice\p1\fz0153.jpg" alt="" />
+          <div class="flex">
+            <p></p>
+            <button class="prim-btn">explore</button>
+          </div>
+        </div>
+        <div class="hero-image-container">
+          <img src="assets/hero-2.avif" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- HERO End -->
 
- 
-  $con = mysqli_connect($servername, $username, $password, $database);
+    <!-- PRODUCTS Start -->
+    <div class="products flex sec-padding">
+      <div class="products-left">
+        <img src="assets/products.PNG" alt="" />
+      </div>
+      <div class="products-right">
+        <div class="products-desc">
+          <h2 class="title">
+            we care your important movements.
+          </h2>
+          <p class="body-text">
+            flowers are like friends they bring colour to your life.
+          </p>
+          <button class="sec-btn">Shop</button>
+        </div>
+        <div class="products-types">
+          <h1 class="sec-heading pb-2">Product</h1>
+          <a href="bouquet.html">
+            bouquet <div><i class="fas fa-arrow-circle-right"></i></div>
+          </a>
+          <a href="cake.html">
+            cakes <div><i class="fas fa-arrow-circle-right"></i></div>
+          </a>
+          <a href="anniversary.html">
+            anniversary gift <div><i class="fas fa-arrow-circle-right"></i></div>
+          </a>
+          <a href="choclates.html">
+            choclates<div><i class="fas fa-arrow-circle-right"></i></div>
+          </a>
+          <a href="icecreams.html">
+            icecreams <div><i class="fas fa-arrow-circle-right"></i></div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- PRoDUCTS End -->
+    <!-- BEST OFFERS Start -->
+    <div class="sec-padding bestoffers" id="products">
+      <div class="bestoffers-header">
+        <h1 class="sec-heading">Best Offers</h1>
+        <p class="body-text">get 20% off by your first order.</p>
+      </div>
+      <div class="offers-cards">
+        <div class="product-card">
+          <span class="fav"><i class="fa-solid fa-heart"></i></span>
+          <div class="card-img">
+            <img src="D:\xampp\htdocs\practice\p1\images\featured3.png" alt="">
+          </div>
+          <div class="card-title">
+            <h2 class="title">Lily</h2>
+            <span class="card-label">10 pcs</span>
+          </div>
+          <p class="body-text">
+            The most celebrated plant in this division is the graceful Madonna lily, beloved for its pure white trumpets and sweet, intoxicating fragrance.
+          </p>
+          <div class="card-footer">
+            <h2 class="title">120$</h2>
+            <button class="prim-btn">add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <span class="fav fav-active"><i class="fa-solid fa-heart"></i></span>
+          <div class="card-img">
+            <img src="D:\xampp\htdocs\practice\p1\images\main-image-rose.jpg" alt="">
+          </div>
+          <div class="card-title">
+            <h2 class="title">roses</h2>
+            <span class="card-label">10 pcs</span>
+          </div>
+          <p class="body-text">
+            The Mister Lincoln Rose is a hybrid tea rose with a true red shade. If you enjoy a classic Valentine-red rose, this may be the variety for you!.
+          </p>
+          <div class="card-footer">
+            <h2 class="title">120$</h2>
+            <button class="prim-btn">add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <span class="fav fav-active"><i class="fa-solid fa-heart"></i></span>
+          <div class="card-img">
+            <img src="D:\xampp\htdocs\practice\p1\images\fea2.jpg" alt="">
+          </div>
+          <div class="card-title">
+            <h2 class="title">jasmine</h2>
+            <span class="card-label">10 pcs</span>
+          </div>
+          <p class="body-text">
+            When you think about jasmine, the common Jasmine is that one variety that immediately comes to mind! This plant is widely appreciated due to its fragrance..
+          </p>
+          <div class="card-footer">
+            <h2 class="title">120$</h2>
+            <button class="prim-btn">add to cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="bestoffers-link">
+        <a href="#" class="link-btn">
+          see more
+          <div><i class="fas fa-arrow-circle-right"></i></div>
+        </a>
+      </div>
+    </div>
+    <!-- BEST OFFERS End -->
+    <!-- BLOG START -->
+    <div class="sec-padding blog" id="blog">
+      <div class="blog-content">
+        <h1 class="sec-heading">blog</h1>
+        <h2 class="title pb-2 pt-2"> 
+          flowers can control the smiles.
+        </h2>
+        <p class="body-text pb-2 pt-2">
+          The Saipua design studio in Brooklyn is one piece of a floral trilogy that includes the World’s End flower farm, and the Little Flower School. The raw passion and hauntingly beautiful vision that drives all three of these projects — with the singular aim, it seems, of covering the state of New York with gorgeous flowers — is on display regularly at the Saipau blog.
 
-  if (!$con) {
-      die("Sorry, we failed to connect: " . mysqli_connect_error());
-  } else {
-      echo "Connection was successful";
-  }
 
- 
-  $sql = "INSERT INTO student (sno, fname, lname, dt) VALUES ('5', '$name', '$lastname', current_timestamp());";
-
-  
-  $result = mysqli_query($con, $sql);
-
-  if ($result) {
-    echo "Data inserted successfully";
-
-  } else {
-    echo "Data not inserted successfully";
-  }
-}
-?>
-<form action="/practice/index.php" method="post">
-
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" ><br>
-
-
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" ><br><br>
-
-  <input type="submit" value="Submit">
-</form> 
-</body>
+          
+        </p>
+        <p class="body-text pb-2 pt-2">
+          Are you looking for a reliable online flowers delivery service in Mumbai? You have come to the right place! Our website offers a wide selection of beautiful flowers that can be delivered to your doorstep in no time. Whether you need to send flowers to India for a special occasion or want to surprise someone with a lovely bouquet, we are here to help. Our experienced...
+          
+        </p>
+        <a href="#" class="link-btn">see more
+          <div>
+            <i class="fas fa-arrow-circle-right"></i>
+          </div>
+        </a>
+      </div>
+      <div class="blog-image">
+        <img src="assets/blog.png" alt="">
+      </div>
+    </div>
+    <!-- BLOG End -->
+    <!-- ADDRESS Start  -->
+    <div class="sec-padding address" id="address">
+      <div class="address-link">
+        <div class="address-icon"><i class="fas fa-phone"></i></div>
+        <p class="bold-body pt-2">(000)000 000</p>
+      </div>
+      <div class="address-link">
+        <div class="address-icon"><i class="fas fa-envelope"></i></div>
+        <p class="bold-body pt-2">examlpe@email.com</p>
+      </div>
+      <div class="address-link">
+        <div class="address-icon"><i class="fas fa-map-marker-alt"></i></div>
+        <p class="bold-body pt-2">Block No. 00 Street, City, Country</p>
+      </div>
+    </div>
+    <!-- ADDRESS End -->
+    <!-- FOOTER Start -->
+    <div class="sec-padding footer">
+      <div>
+        <p class="bold-body pb-2">&copy; 2023 Organice, All rights reserved.</p>
+        <div class="footer-nav">
+          <ul>
+            <li class="footer-link">
+              <a href="#">Privacy Ploice</a>
+            </li>
+            <li class="footer-link">
+              <a href="#">Terms of services</a>
+            </li>
+            <li class="footer-link">
+              <a href="#">Cookie settings</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-social flex">
+        <button class="rounded-btn">
+          <i class="fab fa-pinterest"></i>
+        </button>
+        <button class="rounded-btn">
+          <i class="fab fa-youtube"></i>
+        </button>
+        <button class="rounded-btn">
+          <i class="fab fa-twitter"></i>
+        </button>
+        <button class="rounded-btn">
+          <i class="fab fa-facebook"></i>
+        </button>
+      </div>
+      <div class="footer-btn">
+        <a href="#top" class="top-btn">Back to top <i class="fas fa-chevron-up"></i></a>
+      </div>
+    </div>
+  </body>
 </html>
